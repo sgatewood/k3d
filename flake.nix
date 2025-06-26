@@ -34,7 +34,7 @@
         formatter = treefmtEval.config.build.wrapper;
         checks.formatting = treefmtEval.config.build.check self;
         checks.pkgVersionSnapshotTest = pkgVersionSnapshotTest.check;
-        apps.pkgVersionSnapshotTest = pkgVersionSnapshotTest.updateApp;
+        apps.pkgVersionSnapshotTestUpdate = pkgVersionSnapshotTest.updateApp;
       }
     );
 }
