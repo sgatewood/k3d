@@ -19,7 +19,7 @@ nix-check:
 
 nix-check-update:
     nix fmt
-    nix run .#pkgVersionSnapshotTest
+    nix run .#pkgVersionSnapshotTestUpdate
 
 nix-flake-update:
     nix flake update --commit-lock-file
