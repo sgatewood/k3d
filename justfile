@@ -1,3 +1,6 @@
+help:
+    @just -l
+
 cluster-up:
     k3d cluster create sean --agents 2
 
@@ -10,3 +13,10 @@ cluster-reset:
 
 connect:
     k3d kubeconfig get sean > .kubeconfig
+
+nix-check:
+    nix flake check
+
+nix-check-update:
+    nix fmt
+    nix run .#pkgVersionSnapshotTest
